@@ -9,7 +9,7 @@ from fastai import *
 from fastai.vision import *
 
 model_file_url = 'https://drive.google.com/uc?export=download&id=1ynbUKk6yFnGkKXjJKr9Z8ZgkMKx4h78y'
-model_file_name = 'export'
+model_file_name = 'export.pkl'
 classes = ['You have rights', 'You have no rights']
 path = Path(__file__).parent
 
