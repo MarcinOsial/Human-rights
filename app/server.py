@@ -26,7 +26,7 @@ async def download_file(url, dest):
 
 async def setup_learner():
     await download_file(model_file_url, path/'models'/f'{model_file_name}.pth')
-    learn = load_learner(path, model_file_name)
+    learn = load_learner(path/'models')
         #ImageDataBunch.single_from_classes(path, classes,
         #ds_tfms=get_transforms(), size=224).normalize(imagenet_stats)
     # learn = cnn_learner(data_bunch, models.resnet34, pretrained=False)
